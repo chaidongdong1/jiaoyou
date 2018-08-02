@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/common.css">
+  <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="modules/swiper/styles/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+  <!-- 公共头部 -->
+  <header class="public-header main-bg">
+    <section class="container clear-fix">
+      <section class="lside"><a href="index.html">欢迎您！ 蹲在街角等幸福</a></section>
+      <ul class="public-header-navigation">
+        <li><a href="index.html">我的</a></li>
+        <li><a href="episode.html">段子</a></li>
+        <li><a href="mall.html" class="active">商城</a></li>
+        <li><a href="#">游戏</a></li>
+        <li><a href="#">直播</a></li>
+      </ul>
+      <section class="rside">
+        <section class="account-wapper">
+          <div class="thumb-info">
+            <img src="images/1touxiang.png">
+            <span>账户</span>
+            <i class="iconfont icon-jiantou-copy-copy"></i>
+          </div>
+          <div class="detail-info" hidden>
+            <img src="images/1touxiang.png">
+            <p class="user-name">蹲在街角等幸福</p>
+            <a href="" class="login-out">退出</a>
+            <a class="edit" href="wanshan.html"><i class="iconfont icon-bianji"></i>点击编辑个人资料</a>
+            <p class="balance">钻石：1300钻 <a href="chongzhi.html">充值</a></p>
+            <ul>
+              <li><a href="geren.html">个人中心</a></li>
+              <li><a href="huiyuan.html">我的会员</a></li>
+              <li><a href="MyMessage.html">我的消息<em class="point"></em></a></li>
+            </ul>
+          </div>
+        </section>
+        <a href="#">English</a>
+      </section>
+    </section>
+  </header>
+  <!-- 页面主体 -->
+  <main class="public-main">
+    <section class="container clear-fix">
+      <!-- 左侧栏 -->
+      <section class="public-lside">
+        <img src="images/1touxiang.png" class="head-portrait">
+        <ul class="aside-navigation">
+          <li><a href="geren.html"><i class="iconfont icon-zhanghu"></i>账户</a></li>
+          <li><a href="#"><i class="iconfont icon-duanxin"></i>短信<em class="corner">99</em></a></li>
+          <li><a href="fensi.html"><i class="iconfont icon-fensi"></i>粉丝<em class="corner">99</em></a></li>
+          <li><a href="guanzhu.html"><i class="iconfont icon-chakantieziguanzhu"></i>关注</a></li>
+          <li><a href="tougao.html"><i class="iconfont icon-tianxieribao"></i>投稿</a></li>
+          <li><a href="#"><i class="iconfont icon-94"></i>游戏</a></li>
+          <li><a href="#"><i class="iconfont icon-02"></i>直播</a></li>
+        </ul>
+      </section>
+      <!-- 右侧栏 -->
+      <section class="public-rside">
+        <!-- 轮播广告 -->
+        <div class="adj-swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(images/1guanggao.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(images/1guanggao.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(images/1guanggao.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(images/1guanggao.jpg)"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"><i class="iconfont icon-jiantou"></i></div>
+          <div class="swiper-button-prev"><i class="iconfont icon-jiantou"></i></div>
+        </div>
+        <!-- 标题 -->
+        <section class="public-title-wapper clear-fix">
+          <h4 class="public-title public-long-title">商城中心</h4>
+        </section>
+        <!-- 商品详情 -->
+        <section class="mj-mall-detail">
+          <section class="mj-mall-detail-header clear-fix">
+            <section class="mj-mall-img-wapper pub-bg" style="background-image: url(images/6liwuxq.jpg);"></section>
+            <section class="mj-mall-info-wapper">
+              <h5>七匹狼 男士短袖T恤 男夏季新款时尚休闲纯色莫代尔面料 </h5>
+              <p>七匹狼 男士短袖T恤 男夏季新款时尚休闲纯色莫代尔面料男夏季新款时尚休闲纯色莫代尔面料男夏季新款时尚休闲纯色莫代尔面料 </p>
+              <h6>价格：<span class="price">￥600元</span></h6>
+              <form action="" class="no-select">
+                <div>
+                  选择数量：
+                  <input type="number" id="add_product_input" value="1"><span id="add_product">+</span>
+                </div>
+                <section class="block1"></section>
+                <button class="detail-btn mj-show-confirm-mask">立即购买</button>
+              </form>
+            </section>
+          </section>
+          <section class="public-title-wapper clear-fix">
+            <h4 class="public-title public-title-xs public-long-title">商品详情</h4>
+          </section>
+          <section class="mj-mall-detail-content">
+            后台添加详情内容xxxxxxxxxxxxxxxxxxxxxxxxxx
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
+  <!-- 确认订单弹窗 -->
+  <section class="mj-reward-pop-mask" hidden id="mj_reward_pop_mask">
+    <section class="mj-reward-pop-content mj-confirm-pop-content middle-center">
+      <section class="mj-reward-header">
+        <h4>确认订单</h4>
+        <a href="#" class="mj-close-reward-pop"><i class="iconfont icon-chahao"></i></a>
+      </section>
+      <section class="mj-reward-main mj-confirm-main clear-fix">
+        <h4>商品名称：<span>富贵鸟男士夹克薄款修身休闲男装青中</span></h4>
+        <h4>商品数量：<span>1件</span></h4>
+        <h5 class="no-select" id="mj_select_payment_method">支付方式：<span class="active">Paypal</span><span>支付宝</span></h5>
+        <h6>商品价格：<span>￥50元</span></h6>
+        <a href="#">立即支付</a>
+      </section>
+    </section>
+  </section>
+  <!-- 公共底部 -->
+  <footer class="public-footer main-bg">
+    <section class="container">
+      <ul class="public-footer-navigation">
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="#">用户安全</a></li>
+        <li><a href="#">隐私条款</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+      <p class="copyright">版权所有 交友网站 Copyright 2018 - 2019 豫备案号：00000000号 技术支持：<a href="#">红狐企业网</a>. All Rights Reserved.</p>
+    </section>
+  </footer>
+  <!-- 公共脚本 -->
+  <script src="modules/jquery/jquery.min.js"></script>
+  <script src="modules/swiper/scripts/swiper.jquery.min.js"></script>
+  <script src="modules/layer/scripts/layer.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

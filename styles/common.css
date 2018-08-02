@@ -1,0 +1,523 @@
+* {
+  /*取消ios链接点击之后的遮罩层*/
+  -webkit-tap-highlight-color: transparent;
+  /*-webkit-touch-callout: none; 禁止长按图片后出现下载选项*/
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+b,
+span,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  font-style: normal;
+  font-weight: normal;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+optgroup {
+  font-style: normal;
+  font-weight: normal;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  border:0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+:link,
+:visited,
+ins {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.clear-fix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+img,
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slow {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.middle-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pub-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/*公共颜色*/
+
+.main-bg {
+  background-color: #01d1d1;
+}
+
+
+/*公共头部*/
+
+.public-header {
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.public-header .lside {
+  width: 220px;
+  float: left;
+  line-height: 56px;
+}
+
+.public-header .lside a {
+  color: #fd4236;
+}
+
+.public-header .lside a:hover {
+  text-decoration: underline;
+}
+
+.public-header-navigation {
+  line-height: 56px;
+  font-size: 0;
+  float: left;
+}
+
+.public-header-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 9px 5px;
+}
+
+.public-header-navigation li a {
+  color: #666;
+  display: block;
+  width: 110px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all ease .4s;
+}
+
+.public-header-navigation li a:hover,
+.public-header-navigation li a.active {
+  background-color: #ff6d63;
+  color: #fff;
+}
+
+.public-header .rside {
+  float: right;
+}
+
+.public-header .rside .account-wapper {
+  display: inline-block;
+  padding: 8px 0;
+  vertical-align: middle;
+  position: relative;
+}
+
+.public-header .rside .thumb-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.public-header .rside .thumb-info:hover {
+  color: #fd4136;
+}
+
+.public-header .rside .detail-info {
+  position: absolute;
+  top: 56px;
+  left: -60px;
+  width: 240px;
+  height: 216px;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 2px solid #ff6d63;
+  box-shadow: 0 0 16px #ccc;
+  text-align: center;
+  /*display: none;*/
+}
+
+.public-header .rside .detail-info img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ff6d63;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.public-header .rside .detail-info .login-out {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #999;
+  font-size: 14px;
+}
+.public-header .rside .detail-info .login-out:hover{
+  color: #FF6D63;
+  text-decoration: underline;
+}
+.public-header .rside .detail-info .user-name {
+  margin-bottom: 8px;
+}
+
+.public-header .rside .detail-info .edit {
+  color: #666;
+  font-size: 14px;
+}
+.public-header .rside .detail-info .edit:hover {
+  text-decoration: underline;
+}
+.public-header .rside .detail-info .balance {
+  color: #ff6d63;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.public-header .rside .detail-info .balance a {
+  background-color: #ff6d63;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.public-header .rside .detail-info ul {
+  display: flex;
+  padding-top: 6px;
+}
+
+.public-header .rside .detail-info ul li {
+  flex: 1;
+  font-size: 14px;
+}
+
+.public-header .rside .detail-info ul li a {
+  color: #ff6d63;
+  position: relative;
+}
+.public-header .rside .detail-info ul li a:hover{
+  text-decoration: underline;
+}
+
+.public-header .rside .detail-info ul li a .point {
+  position: absolute;
+  right: -8px;
+  top: -2px;
+}
+
+.point {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6d63;
+  border-radius: 50%;
+}
+
+
+/*.public-header .rside .account-wapper:hover .detail-info {
+  display: block;
+}*/
+
+.public-header .rside .thumb-info span {
+  padding: 0 6px 0 10px;
+  transition: all ease .3s;
+}
+
+.public-header .rside .thumb-info i {
+  transition: all ease .3s;
+}
+
+.public-header .rside .thumb-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.public-header .rside>a {
+  color: #333;
+  padding-left: 25px;
+}
+.public-header .rside>a:hover{
+  color: #FF6D63;
+  text-decoration: underline;
+}
+
+/*公共底部*/
+
+.public-footer {
+  height: 80px;
+  margin-top: 20px;
+}
+
+.public-footer-navigation {
+  text-align: center;
+  padding: 15px 0 10px;
+}
+
+.public-footer-navigation li {
+  display: inline-block;
+  padding: 0 22px;
+  border-right: 1px solid #333;
+  line-height: 16px
+}
+
+.public-footer-navigation li:last-child {
+  border-right: 0;
+}
+
+.public-footer-navigation li a {
+  color: #333;
+  font-size: 16px;
+}
+.public-footer-navigation li .public-footer-active{
+  color: #fff;
+}
+.public-footer-navigation li a:hover{
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
+.copyright a{
+  color: #333;
+}
+.copyright a:hover{
+  color: #fff;
+}
+
+
+/*页面主体*/
+
+.public-lside {
+  width: 220px;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.public-lside .head-portrait {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid #26d4d3;
+}
+.aside-navigation li .public-lside-active{
+  background: #27D1D1;
+  color: #fff;
+}
+
+.aside-navigation li .public-lside-active i{
+  color: #fff;
+}
+
+.aside-navigation li a:hover{
+  background: #27D1D1;
+  color: #fff;
+}
+.aside-navigation li a:hover i{
+  color: #fff;
+}
+
+
+.public-rside {
+  width: 980px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.aside-navigation li {
+  text-align: center;
+  font-size: 0;
+  margin: 18px 0;
+}
+
+.corner {
+  display: block;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff6d63;
+  color: #fff;
+  font-style: normal;
+}
+
+.aside-navigation li a {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  line-height: 40px;
+  color: #333;
+  position: relative;
+}
+
+.aside-navigation li a .corner {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.aside-navigation li a i {
+  padding-right: 6px;
+  color: #666;
+}
+.adj-swiper-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.adj-swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+/*.adj-swiper-container .swiper-button-next{
+  right: 20px;
+}*/
+
+.adj-swiper-container .swiper-button-next i {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.adj-swiper-container .swiper-button-next,
+.adj-swiper-container .swiper-button-prev {
+  background-image: none;
+}
+
+.adj-swiper-container .swiper-button-next i,
+.adj-swiper-container .swiper-button-prev i {
+  font-size: 42px;
+  color: #ff6d63;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/common.css">
+  <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="modules/swiper/styles/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <style>
+  .d6 p b {
+    cursor: pointer;
+    color: #FF6D63;
+  }
+
+  .d6-p-active {
+    border-bottom: 2px solid #FF6D63;
+    padding-bottom: 10px;
+    color: #FF6D63;
+  }
+
+  .d6 p b:last-child {
+    margin-left: 30px;
+  }
+
+  .d6 {
+    width: 300px;
+    height: 250px;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    margin-top: -260px;
+    padding: 20px;
+  }
+
+  .d7 {
+    background: rgba(255, 255, 255, .9);
+    height: 420px !important;
+  }
+  </style>
+</head>
+
+<body class="d6-logo-bj">
+  <!-- 登录 -->
+  <div class="d6" id="d6-aaa">
+    <p><b class="d6-p-active">欢迎登录</b><b>注册新账号</b></p>
+    <input type="text" placeholder="请输入用户名" name="">
+    <input type="password" placeholder="请输入密码" name="">
+    <button><a href="#">登录</a></button>
+    <h6><span style="float: left;"><a href="password.html">忘记密码</a></h6>
+  </div>
+  <!-- 注册 -->
+  <div class="d6 d7" id="d6-bbb" style="display: none;">
+    <p><b>欢迎登录</b><b class="d6-p-active">注册新账号</b></p>
+    <input type="text" placeholder="请输入用户名" name="">
+    <input type="text" placeholder="请输入手机号" name="">
+    <input type="password" placeholder="请输入密码" name="">
+    <input type="password" placeholder="请确认密码" name="">
+    <input type="text" placeholder="请输入推广码(选填)" name="">
+    <button><a href="#">注册</a></button>
+    <h6><span style="float: left;"><a href="password.html">忘记密码</a></span></h6>
+  </div>
+  <!-- 公共底部 -->
+  <footer class="public-footer main-bg d6-logo-dibu">
+    <section class="container">
+      <ul class="public-footer-navigation">
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="#">用户安全</a></li>
+        <li><a href="#">隐私条款</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+      <p class="copyright">版权所有 交友网站 Copyright 2018 - 2019 豫备案号：00000000号 技术支持：<a href="#">红狐企业网</a>. All Rights Reserved.</p>
+    </section>
+  </footer>
+  <!-- 公共脚本 -->
+  <script src="modules/jquery/jquery.min.js"></script>
+  <script src="modules/swiper/scripts/swiper.jquery.min.js"></script>
+  <script src="modules/layer/scripts/layer.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
